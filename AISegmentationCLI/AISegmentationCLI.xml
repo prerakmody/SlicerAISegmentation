@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Machine Learning</category>
+  <index>0</index>
+  <title>AISegmentationCLI</title>
+  <description><![CDATA[Use a tensorflow model for segmentation of head and neck CT]]></description>
+  <version>0.1.0.</version>
+  <documentation-url>https://github.com/lassoan/SlicerPythonCLIExample</documentation-url>
+  <license/>
+  <contributor>Prerak Mody (LUMC)</contributor>
+  <acknowledgements><![CDATA[.]]></acknowledgements>
+
+  <parameters>
+  <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>
+    <image>
+      <label>Input Volume</label>
+      <name>inputVolume</name>
+      <longflag>inputVolume</longflag>
+      <channel>input</channel>
+      <index>1</index>
+      <description><![CDATA[Input volume]]></description>
+    </image>
+    <image>
+      <label>Output Volume</label>
+      <name>outputVolume</name>
+      <longflag>outputVolume</longflag>
+      <channel>input</channel>
+      <index>2</index>
+      <description><![CDATA[Input volume]]></description>
+    </image>
+    <string>
+      <label>Input Volume Name</label>
+      <name>inputVolumeName</name>
+      <longflag>inputVolumeName</longflag>
+      <channel>input</channel>
+      <index>3</index>
+      <description><![CDATA[Input volume name]]></description>
+    </string>
+    <string>
+      <label>Model Path</label>
+      <name>modelPath</name>
+      <longflag>modelPath</longflag>
+      <channel>input</channel>
+      <description><![CDATA[Path of the deep learning Model]]></description>
+    </string>
+    <float>
+      <label>Prediction Threshold</label>
+      <name>predThresh</name>
+      <longflag>predThresh</longflag>
+      <channel>input</channel>
+      <description><![CDATA[Prediction Threshold]]></description>
+    </float>
+  </parameters>
+</executable>

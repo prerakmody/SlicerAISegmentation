@@ -1,0 +1,6 @@
+# Python Extensions
+.pyc
+
+# Folders
+models
+__pycache__
